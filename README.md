@@ -37,9 +37,10 @@ https://www.youtube.com/watch?v=1wQWteDCyKU
 ## Installation
 
 + Install Sitecore 10.1 (rev.005207) with SXA
-+ Install the package with Control Panel wizard (Control Panel -> Install a package) [package](#)
++ Install the package with Control Panel wizard (Control Panel -> Install a package) [package](https://github.com/Sitecore-Hackathon/2021-TeamNoesis/blob/main/RealTime-1.2.zip)
 + Run the sql script on your server database
 + Change the Web.config replacing the entry "Content-Securuty-Policy" whith the following one:
++ Deploy the code to your instance
 
 > ``` <add name="Content-Security-Policy" value="default-src 'self' 'unsafe-inline' 'unsafe-eval' maps.googleapis.com; img-src 'self' data: maps.gstatic.com *.googleapis.com *.ggpht; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' 'unsafe-inline' https://fonts.gstatic.com; upgrade-insecure-requests; block-all-mixed-content;" /> ```
 
