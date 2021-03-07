@@ -24,15 +24,14 @@ The purpose of this module is to provide the user with the information on how ma
 + Map of the various locations where there are active users. 
 
 Inline-style: 
-![alt text](https://github.com/Sitecore-Hackathon/2021-TeamNoesis/blob/main/docs/images/experience-analytics.jpg")
+![alt text](https://github.com/Sitecore-Hackathon/2021-TeamNoesis/blob/main/docs/images/experience-analytics.jpg "Experience Analytics")
+
 **What problem was solved**
 
 So far Sitecore don't provide this kind of visualization of what's hapennig at that momment, this module is a step closer to be free of external website tracking tools and have all in one place. 
 
 ## Video link
-⟹ Provide a video highlighing your Hackathon module submission and provide a link to the video. You can use any video hosting, file share or even upload the video to this repository. _Just remember to update the link below_
-
-⟹ [Replace this Video link](#video-link)
+https://www.youtube.com/watch?v=1wQWteDCyKU
 
 
 ## Installation
