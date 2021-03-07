@@ -49,12 +49,14 @@ So far Sitecore don't provide this kind of visualization of what's hapennig at t
 ## Usage instructions
 
 1. Login to Sitecore
-2. In LaunchPad Access to the Experience Analytics
-3. Inline-style: 
+2. In the LaunchPad you can see on the right the Real Time Views as shown bellow
+   
+4. In LaunchPad Access to the Experience Analytics
+5. Inline-style: 
 ![alt text](https://github.com/Sitecore-Hackathon/2021-TeamNoesis/blob/main/docs/images/experience_analitycs.png "Experience Analytics")
-4.
+4. In the Experience Analytics you will find the Tab RealTime, expand it and click in Real Time Views
 Inline-style: 
-![alt text](https://github.com/Sitecore-Hackathon/2021-TeamNoesis/blob/main/docs/images/experience_analitycs.png "Experience Analytics")
+![alt text](https://github.com/Sitecore-Hackathon/2021-TeamNoesis/blob/main/docs/images/RealTimeViews.png "RealTimeViews")
 
 
 
