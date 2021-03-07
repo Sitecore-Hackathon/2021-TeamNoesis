@@ -16,8 +16,8 @@ The best enhancement to the Sitecore Admin (XP) for Content Editors & Marketers
 
 The purpose of this module is to provide the user with the information on how many users are viewing his website at that moment, also it provides with following information:
 
-+ current page url 
-+ url referal 
++ Current page url 
++ Url referal 
 + Country 
 + City 
 + Browser Information
@@ -33,18 +33,6 @@ So far Sitecore don't provide this kind of visualization of what's hapennig at t
 ⟹ [Replace this Video link](#video-link)
 
 
-
-## Pre-requisites and Dependencies
-
-+ Sitecore 10.1 (rev.005207)
-
-
-- List any dependencies
-- Or other modules that must be installed
-- Or services that must be enabled/configured
-
-_Remove this subsection if your entry does not have any prerequisites other than Sitecore_
-
 ## Installation
 
 + Install Sitecore 10.1 (rev.005207) with SXA
@@ -58,12 +46,11 @@ _Remove this subsection if your entry does not have any prerequisites other than
 
 > ``` <add name="analytics" connectionString="Data Source=localhost;Initial Catalog=sc101_Analytics;User ID=sc101;Password=2021TeamNoesis" /> ```
  
-### Configuration
-⟹ If there are any custom configuration that has to be set manually then remember to add all details here.
-
-_Remove this subsection if your entry does not require any configuration that is not fully covered in the installation instructions already_
-
 ## Usage instructions
+
+1. Login to Sitecore
+2. 
+
 ⟹ Provide documentation about your module, how do the users use your module, where are things located, what do the icons mean, are there any secret shortcuts etc.
 
 Include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
