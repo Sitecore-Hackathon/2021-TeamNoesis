@@ -39,6 +39,7 @@ https://www.youtube.com/watch?v=1wQWteDCyKU
 + Install Sitecore 10.1 (rev.005207) with SXA
 + Install the package with Control Panel wizard (Control Panel -> Install a package) [package](https://github.com/Sitecore-Hackathon/2021-TeamNoesis/blob/main/RealTime-1.2.zip)
 + Run the sql script on your server database
++ Instal Package https://github.com/Sitecore-Hackathon/2021-TeamNoesis/blob/main/2021-TeamNoesis.zip
 + Change the Web.config replacing the entry "Content-Securuty-Policy" whith the following one:
 + Deploy the code to your instance
 
