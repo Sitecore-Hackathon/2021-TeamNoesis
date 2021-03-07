@@ -11,12 +11,21 @@ The best enhancement to the Sitecore Admin (XP) for Content Editors & Marketers
 
 ## Description
 
+### Real Time Page Views
+**Module Purpose**
 
-  - Module Purpose
-  - What problem was solved (if any)
-    - How does this module solve it
+The purpose of this module is to provide the user with the information on how many users are viewing his website at that moment, also it provides with following information:
 
-_You can alternately paste a [link here](#docs) to a document within this repo containing the description._
++ current page url 
++ url referal 
++ Country 
++ City 
++ Browser Information
++ Map of the various locations where there are active users. 
+
+**What problem was solved**
+
+So far Sitecore don't provide this kind of visualization of what's hapennig at that momment, this module is a step closer to be free of external website tracking tools and have all in one place. 
 
 ## Video link
 ⟹ Provide a video highlighing your Hackathon module submission and provide a link to the video. You can use any video hosting, file share or even upload the video to this repository. _Just remember to update the link below_
@@ -27,7 +36,8 @@ _You can alternately paste a [link here](#docs) to a document within this repo c
 
 ## Pre-requisites and Dependencies
 
-⟹ Does your module rely on other Sitecore modules or frameworks?
++ Sitecore 10.1 (rev.005207)
+
 
 - List any dependencies
 - Or other modules that must be installed
@@ -35,8 +45,19 @@ _You can alternately paste a [link here](#docs) to a document within this repo c
 
 _Remove this subsection if your entry does not have any prerequisites other than Sitecore_
 
-## Installation instructions
-⟹ Write a short clear step-wise instruction on how to install your module.  
+## Installation
+
++ Install Sitecore 10.1 (rev.005207) with SXA
++ Install the package with Control Panel wizard (Control Panel -> Install a package) [package](#)
++ Run the sql script on your server database
++ Change the Web.config replacing the entry "Content-Securuty-Policy" whith the following one:
+
+> ``` <add name="Content-Security-Policy" value="default-src 'self' 'unsafe-inline' 'unsafe-eval' maps.googleapis.com; img-src 'self' data: maps.gstatic.com *.googleapis.com *.ggpht; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' 'unsafe-inline' https://fonts.gstatic.com; upgrade-insecure-requests; block-all-mixed-content;" /> ```
+
++ Add the following entry to your connection string
+
+> ``` <add name="analytics" connectionString="Data Source=localhost;Initial Catalog=sc101_Analytics;User ID=sc101;Password=2021TeamNoesis" /> ```
+ 
 
 > _A simple well-described installation process is required to win the Hackathon._  
 > Feel free to use any of the following tools/formats as part of the installation:
