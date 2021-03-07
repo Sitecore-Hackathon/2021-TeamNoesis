@@ -44,12 +44,13 @@ So far Sitecore don't provide this kind of visualization of what's hapennig at t
 
 + Add the following entry to your connection string
 
-> ``` <add name="analytics" connectionString="Data Source=localhost;Initial Catalog=sc101_Analytics;User ID=sc101;Password=2021TeamNoesis" /> ```
+> ``` <add name="analytics" connectionString="Data Source=localhost;Initial Catalog=sc101_Analytics;User ID=sc101;Password=..." /> ```
  
 ## Usage instructions
 
 1. Login to Sitecore
-2. 
+2. In LaunchPad Access to the Esperience Analytics
+    https://github.com/Sitecore-Hackathon/2021-TeamNoesis/blob/main/docs/images/experience_analitycs.png
 
 ⟹ Provide documentation about your module, how do the users use your module, where are things located, what do the icons mean, are there any secret shortcuts etc.
 
