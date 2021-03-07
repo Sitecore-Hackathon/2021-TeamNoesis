@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{8DD647F9-5188-4FF7-B68C-8D449896F429}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{0FC45AAC-D6F5-4E04-8EA6-386458A13536}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{279D0DB1-AD02-4CD3-907A-75C0642333FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{A0168FB7-13FE-4E52-BE29-C077A395012B}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\2021-teamnoesis\.editorconfig = ..\..\2021-teamnoesis\.editorconfig
+		..\..\2021-teamnoesis\nuget.config = ..\..\2021-teamnoesis\nuget.config
+		..\..\2021-teamnoesis\package.json = ..\..\2021-teamnoesis\package.json
+		..\..\2021-teamnoesis\publishsettings.targets = ..\..\2021-teamnoesis\publishsettings.targets
+		..\..\2021-teamnoesis\README.md = ..\..\2021-teamnoesis\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Analytics", "Analytics", "{E60E5910-CAB5-4F37-B3C9-168C6CD41CA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamNoesis.Feature.Analytics", "src\Feature\Analytics\code\TeamNoesis.Feature.Analytics.csproj", "{2739C29F-2E87-44E0-842E-36BB9C637FBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2739C29F-2E87-44E0-842E-36BB9C637FBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2739C29F-2E87-44E0-842E-36BB9C637FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2739C29F-2E87-44E0-842E-36BB9C637FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2739C29F-2E87-44E0-842E-36BB9C637FBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E60E5910-CAB5-4F37-B3C9-168C6CD41CA8} = {8DD647F9-5188-4FF7-B68C-8D449896F429}
+		{2739C29F-2E87-44E0-842E-36BB9C637FBD} = {E60E5910-CAB5-4F37-B3C9-168C6CD41CA8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE002DF6-B14B-4933-B645-0751A2F0965A}
+	EndGlobalSection
+EndGlobal

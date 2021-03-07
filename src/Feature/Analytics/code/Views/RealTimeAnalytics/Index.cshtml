@@ -1,0 +1,295 @@
+﻿@using System.Web.Mvc.Html
+
+@model  TeamNoesis.Feature.Analytics.Models.RealTimeAnalyticsViewModel
+
+<div class="row">
+    <h2>Active users at this moment</h2>
+    <h1>@(Model.OnlineUsers.Count())</h1>
+
+    <div class="col-md-5">
+
+        <div class="sc-ExperienceAnalyticsBarChart">
+            <div class="sc-ChartComposites">
+                <div class="sc-border">
+                    <div class="sc-advancedExpander">
+                        <div class="sc-advancedExpander-header data-sc-registered" data-bind="click: toggle">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="sc-advancedExpander-header-title">
+                                            <span class="sc-advancedExpander-header-title-text data-sc-registered" data-bind="text: header">Active Users By Device</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="sc-advancedExpander-body">
+                            <div class="sc-ExperienceAnalyticsDataTable">
+                                <table class="sc-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Device</th>
+                                            <th>Active Users</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model.OnlineUsersByDevice)
+                                        {
+                                            <tr>
+                                                <td>@(item.Metric)</td>
+                                                <td>@(item.Count)</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sc-ExperienceAnalyticsBarChart">
+            <div class="sc-ChartComposites">
+                <div class="sc-border">
+                    <div class="sc-advancedExpander">
+                        <div class="sc-advancedExpander-header data-sc-registered" data-bind="click: toggle">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="sc-advancedExpander-header-title">
+                                            <span class="sc-advancedExpander-header-title-text data-sc-registered" data-bind="text: header">Active Users By Page</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="sc-advancedExpander-body">
+                            <div class="sc-ExperienceAnalyticsDataTable">
+                                <table class="sc-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Page</th>
+                                            <th>Active Users</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model.OnlineUsersByPage)
+                                        {
+                                            <tr>
+                                                <td>@(item.Metric)</td>
+                                                <td>@(item.Count)</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sc-ExperienceAnalyticsBarChart">
+            <div class="sc-ChartComposites">
+                <div class="sc-border">
+                    <div class="sc-advancedExpander">
+                        <div class="sc-advancedExpander-header data-sc-registered" data-bind="click: toggle">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="sc-advancedExpander-header-title">
+                                            <span class="sc-advancedExpander-header-title-text data-sc-registered" data-bind="text: header">Active Users By Contry</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="sc-advancedExpander-body">
+                            <div class="sc-ExperienceAnalyticsDataTable">
+                                <table class="sc-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Contry</th>
+                                            <th>Active Users</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model.OnlineUsersByCountry)
+                                        {
+                                            <tr>
+                                                <td>@(item.Metric)</td>
+                                                <td>@(item.Count)</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sc-ExperienceAnalyticsBarChart">
+            <div class="sc-ChartComposites">
+                <div class="sc-border">
+                    <div class="sc-advancedExpander">
+                        <div class="sc-advancedExpander-header data-sc-registered" data-bind="click: toggle">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="sc-advancedExpander-header-title">
+                                            <span class="sc-advancedExpander-header-title-text data-sc-registered" data-bind="text: header">Active Users By Browser</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="sc-advancedExpander-body">
+                            <div class="sc-ExperienceAnalyticsDataTable">
+                                <table class="sc-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Device</th>
+                                            <th>Active Users</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model.OnlineUsersByBrowser)
+                                        {
+                                            <tr>
+                                                <td>@(item.Metric)</td>
+                                                <td>@(item.Count)</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sc-ExperienceAnalyticsBarChart">
+            <div class="sc-ChartComposites">
+                <div class="sc-border">
+                    <div class="sc-advancedExpander">
+                        <div class="sc-advancedExpander-header data-sc-registered" data-bind="click: toggle">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="sc-advancedExpander-header-title">
+                                            <span class="sc-advancedExpander-header-title-text data-sc-registered" data-bind="text: header">Active Users By Referrals</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="sc-advancedExpander-body">
+                            <div class="sc-ExperienceAnalyticsDataTable">
+                                <table class="sc-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Device</th>
+                                            <th>Active Users</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model.OnlineUsersByReferrer)
+                                        {
+                                            <tr>
+                                                <td>@(item.Metric)</td>
+                                                <td>@(item.Count)</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-7">
+        <div class="sc-ExperienceAnalyticsBarChart">
+            <div class="sc-ChartComposites">
+                <div class="sc-border">
+                    <div class="sc-advancedExpander">
+                        <div class="sc-advancedExpander-header">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="sc-advancedExpander-header-title">
+                                            <span class="sc-advancedExpander-header-title-text">Locations</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="sc-advancedExpander-body">
+                            <div id="map" style="height: 500px; width: auto;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    window.onload = function () {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.async = true;
+        script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyC2Qm598YWRtjYJgyFFwoT3BGYHBBeNKKk';
+        script.onload = function () {
+            var locations = [];
+
+            @foreach (var user in Model.OnlineUsers)
+            {
+                @Html.Raw("locations.push(['" + user.City + "', '" + user.Country + "', " + user.Latitude + ", " + user.Longitude + "]);");
+            }
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 5,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+
+            var infowindow = new google.maps.InfoWindow();
+            var marker, i;
+            var bounds = new google.maps.LatLngBounds();
+            for (i = 0; i < locations.length; i++) {
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(locations[i][2], locations[i][3]),
+                    map: map
+                });
+
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    return function () {
+                        infowindow.setContent(locations[i][0] + ", " + locations[i][1]);
+                        infowindow.open(map, marker);
+                    }
+                })(marker, i));
+                bounds.extend(marker.position);
+            }
+
+            if (location.length > 1) {
+                map.fitBounds(bounds);
+            }
+
+            map.setCenter(bounds.getCenter());
+        };
+
+        document.getElementsByTagName('head')[0].appendChild(script);
+    };
+</script>

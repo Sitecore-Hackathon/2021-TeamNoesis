@@ -1,0 +1,53 @@
+﻿@using System.Web.Mvc.Html
+
+@model  TeamNoesis.Feature.Analytics.Models.RealTimeAnalyticsViewModel
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Active users at this moment</h2>
+        <h1>@(Model.OnlineUsers.Count())</h1>
+        <br />
+
+        <div class="sc-ExperienceAnalyticsBarChart">
+            <div class="sc-ChartComposites">
+                <div class="sc-border">
+                    <div class="sc-advancedExpander">
+                        <div class="sc-advancedExpander-header data-sc-registered" data-bind="click: toggle">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="sc-advancedExpander-header-title">
+                                            <span class="sc-advancedExpander-header-title-text data-sc-registered" data-bind="text: header">Top 5 Active Pages:</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="sc-advancedExpander-body">
+                            <div class="sc-ExperienceAnalyticsDataTable">
+                                <table class="sc-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Page</th>
+                                            <th>Active Users</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model.OnlineUsersByPage.Take(5))
+                                        {
+                                            <tr>
+                                                <td>@(item.Metric)</td>
+                                                <td>@(item.Count)</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
