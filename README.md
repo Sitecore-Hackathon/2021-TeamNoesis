@@ -52,13 +52,17 @@ https://www.youtube.com/watch?v=1wQWteDCyKU
 
 1. Login to Sitecore
 2. In the LaunchPad you can see on the right the Real Time Views as shown bellow
-3. Inline-style: 
+
+
+Inline-style: 
 ![alt text]( https://github.com/Sitecore-Hackathon/2021-TeamNoesis/blob/main/docs/images/launchap-widget.jpg "LaunchPad")  
+
 4. In LaunchPad Access to the Experience Analytics
  
 Inline-style: 
 ![alt text](https://github.com/Sitecore-Hackathon/2021-TeamNoesis/blob/main/docs/images/experience_analitycs.png "Experience Analytics")
-4. In the Experience Analytics you will find the Tab RealTime, expand it and click in Real Time Views
+
+5. In the Experience Analytics you will find the Tab RealTime, expand it and click in Real Time Views
 
 Inline-style: 
 ![alt text](https://github.com/Sitecore-Hackathon/2021-TeamNoesis/blob/main/docs/images/RealTimeViews.png "RealTimeViews")
@@ -69,19 +73,3 @@ Inline-style:
 
 
 
-⟹ Provide documentation about your module, how do the users use your module, where are things located, what do the icons mean, are there any secret shortcuts etc.
-
-Include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
-
-![Hackathon Logo](docs/images/hackathon.png?raw=true "Hackathon Logo")
-
-You can embed images of different formats too:
-
-![Deal With It](docs/images/deal-with-it.gif?raw=true "Deal With It")
-
-And you can embed external images too:
-
-![Random](https://thiscatdoesnotexist.com/)
-
-## Comments
-If you'd like to make additional comments that is important for your module entry.
