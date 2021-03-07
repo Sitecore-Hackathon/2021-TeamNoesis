@@ -23,6 +23,8 @@ The purpose of this module is to provide the user with the information on how ma
 + Browser Information
 + Map of the various locations where there are active users. 
 
+Inline-style: 
+![alt text](https://github.com/Sitecore-Hackathon/2021-TeamNoesis/blob/main/docs/images/experience-analytics.jpg")
 **What problem was solved**
 
 So far Sitecore don't provide this kind of visualization of what's hapennig at that momment, this module is a step closer to be free of external website tracking tools and have all in one place. 
@@ -53,13 +55,16 @@ So far Sitecore don't provide this kind of visualization of what's hapennig at t
 3. Inline-style: 
 ![alt text]( https://github.com/Sitecore-Hackathon/2021-TeamNoesis/blob/main/docs/images/launchap-widget.jpg "LaunchPad")  
 4. In LaunchPad Access to the Experience Analytics
-5. Inline-style: 
+ 
+Inline-style: 
 ![alt text](https://github.com/Sitecore-Hackathon/2021-TeamNoesis/blob/main/docs/images/experience_analitycs.png "Experience Analytics")
 4. In the Experience Analytics you will find the Tab RealTime, expand it and click in Real Time Views
+
 Inline-style: 
 ![alt text](https://github.com/Sitecore-Hackathon/2021-TeamNoesis/blob/main/docs/images/RealTimeViews.png "RealTimeViews")
+
 Inline-style: 
-![alt text](https://github.com/Sitecore-Hackathon/2021-TeamNoesis/blob/main/docs/images/RealTimeViews.png "RealTimeViews")
+![alt text](https://github.com/Sitecore-Hackathon/2021-TeamNoesis/blob/main/docs/images/experience-analytics.jpg")
 
 
 
